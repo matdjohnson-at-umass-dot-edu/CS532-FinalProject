@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  pyspark-notebook-mysql:
+    image: mysql:9.3.0
+    container_name: pyspark-notebook-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3306:3306
+    networks:
+      - pyspark-notebook-mysql
+  pyspark-notebook-mysql-init:
+    container_name: pyspark-notebook-mysql-init
+    depends_on:
+      - pyspark-notebook-mysql
+    volumes:
+      - ./init-container:/files
+    command:
+      bash /files/entrypoint.sh
+    networks:
+      - pyspark-notebook-mysql
+    build:
+      dockerfile: ./Dockerfile-init
+
+networks:
+  pyspark-notebook-mysql:
+    driver: bridge
+

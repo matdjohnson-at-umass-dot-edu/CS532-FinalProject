@@ -1,0 +1,11 @@
+**.idea
+.DS_Store
+data/ir_datasets/*
+PySpark/bin
+PySpark/etc
+PySpark/lib
+PySpark/share
+**.iml
+PySpark/pyvenv.cfg
+out
+data/ir_datasets/*

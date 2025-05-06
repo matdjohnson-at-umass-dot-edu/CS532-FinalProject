@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyspark_connect/__init__.py
+pyspark_connect/version.py
+pyspark_connect.egg-info/PKG-INFO
+pyspark_connect.egg-info/SOURCES.txt
+pyspark_connect.egg-info/dependency_links.txt
+pyspark_connect.egg-info/requires.txt
+pyspark_connect.egg-info/top_level.txt
