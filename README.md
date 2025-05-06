@@ -6,7 +6,7 @@ The repository contains the code used to run a local Spark instance and execute 
 
 The PySpark job builds an inverted index from the WIKIR dataset, which is then evaluated using the BM25 retrieval algorithm and the query relevance data from the WIKIR database.
 
-The Spark instance code is in the ./Spark directory. This is a clone of the Spark sources, and is used in order to ensure version consistency. Note that the repository is frozen given that the git directory has been renamed to `.gitoriginal`.
+The Spark instance code is in the ./Spark directory. This is a clone of the Spark sources, and is used in order to ensure version consistency. Note that the repository is frozen.
 
 The PySpark job code is in the ./PySpark directory. The job is implemented in the `CS532-FinalProjectProgram.py` file.
 

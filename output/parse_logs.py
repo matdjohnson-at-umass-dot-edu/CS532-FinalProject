@@ -28,7 +28,7 @@ for filename in os.listdir('./' + directory):
         if timestamp_float > max_time:
             max_time = timestamp_float
 
-output_filename = './' + directory + '/combined-' + str(int(min_time)) + '-' + str(int(max_time)) + '.log'
+output_filename = './' + directory + '/combined-' + str(int(min_time)) + '-' + str(int(max_time)) + '.csv'
 output_file = open(output_filename, 'w+')
 output_file.write(f"\"Configuration\",\"Operation Executed\",\"Execution Timestamp\",\"Cores\",\"Memory\",\"Memory Python\",\"Execution Time\"\n")
 for entry in entries_to_write:
