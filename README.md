@@ -55,3 +55,8 @@ Execution of the Jupyter notebook on Colab requires the Google Drive folder to b
 
 Colab execution is configured to be performed with the v2-8 TPU instance type, which has a total of 96 cores, and is available free at the time of this writing.
 
+### Additional Resources
+
+The following is a link to the source data for the graphs in `output/graphs`:
+
+https://docs.google.com/spreadsheets/d/1Wl7RWo3ZhdTakSNp0tF4Jv8tHX5Mr_-1MUuqO4hJAL4/edit?usp=sharing
